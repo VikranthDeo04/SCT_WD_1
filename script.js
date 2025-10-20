@@ -21,14 +21,4 @@ function revealSections() {
 window.addEventListener('scroll', revealSections);
 window.addEventListener('DOMContentLoaded', () => {
   revealSections();
-
-  // Hamburger menu toggle
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  const navCTA = document.querySelector(".nav-cta");
-  navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    navCTA.classList.toggle("open");
-    navToggle.classList.toggle("open");
-  });
 });
