@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skillcraft | Home</title>
+  <!-- Use Google Fonts for improved typography -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav id="navbar">
     <div class="nav-content">
-      <a href="index.html" class="logo">
-<a href="index.html" class="logo">
-  <img src="assets\logo.jpeg" alt="Skillcraft Logo" class="logo-img">
-  Skillcraft
-</a>
+      <a href="index.html" class="logo" aria-label="Skillcraft Home">
+        <img src="assets/logo.jpeg" alt="Skillcraft Logo" class="logo-img">
+        <span class="logo-text">Skillcraft</span>
       </a>
-
-      <ul>
+      <ul class="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="features.html">Features</a></li>
         <li><a href="about.html">About</a></li>
@@ -25,21 +24,74 @@
       <a href="contact.html" class="cta-btn">Contact Us</a>
     </div>
   </nav>
-  <section class="hero">
+
+  <section class="hero glass hero-section">
     <div class="container">
-      <h1>Welcome to Skillcraft</h1>
+      <h1>Welcome to <span class="accent">Skillcraft</span></h1>
       <p>
-        Experience responsive glassmorphism navigation and clean layout.<br>
-        Designed for readability and modern style.
+        Experience responsive glassmorphism navigation and a clean layout.<br>
+        Designed for readability and modern style. Showcase your internship projects with elegance!
       </p>
       <a href="features.html" class="cta-btn hero-btn">Explore Features</a>
     </div>
   </section>
-  <footer>
+
+  <section class="features glass features-section">
     <div class="container">
-      &copy; 2025 Skillcraft Internship Demo. All Rights Reserved.
+      <h2>Why Choose Skillcraft?</h2>
+      <div class="features-row">
+        <div class="feature-card">
+          <h3>Modern Design</h3>
+          <p>Glassmorphism UI and responsive layouts make your projects shine.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Easy Navigation</h3>
+          <p>Find everything quickly with our intuitive menu and clear structure.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Internship Ready</h3>
+          <p>Perfect starting point for demos, portfolios, and skill showcases.</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section class="testimonials glass testimonials-section">
+    <div class="container">
+      <h2>What Our Interns Say</h2>
+      <div class="testimonials-row">
+        <div class="testimonial">
+          <p>"Skillcraft made my internship project stand out!"</p>
+          <span>- Priya, Web Developer Intern</span>
+        </div>
+        <div class="testimonial">
+          <p>"The UI is so clean and easy to navigate."</p>
+          <span>- Aman, Frontend Intern</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-signup">
+  <h2>Stay Updated</h2>
+  <form id="newsletter-form">
+    <input type="email" name="email" placeholder="Your email" required>
+    <button type="submit" class="cta-btn">Sign Up</button>
+  </form>
+</section>
+
+  <footer class="glass footer-section">
+    <div class="container footer-content">
+      <span>&copy; 2025 Skillcraft Internship Demo. All Rights Reserved.</span>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Simple newsletter form handler (demo)
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for signing up!');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
